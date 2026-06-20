@@ -12,4 +12,8 @@ export class Interpolacion {
     nombre: "Edwin Morales",
     edad: 35
   };
+
+  saludar(){
+    return `Hola, ${this.usuario.nombre}`;
+  }
 }
