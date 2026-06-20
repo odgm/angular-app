@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
   `,
   styles: `
     h1 {
-      color: blue;
+      color: yellow;
     }
     p {
       font-size: larger;
