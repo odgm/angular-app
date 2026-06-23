@@ -1,9 +1,10 @@
 import { Component, signal } from '@angular/core';
 import { MostrarMensaje } from "./mostrar-mensaje/mostrar-mensaje";
+import { Replicador } from './replicador/replicador';
 
 @Component({
   selector: 'app-root',
-  imports: [MostrarMensaje],
+  imports: [Replicador],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
