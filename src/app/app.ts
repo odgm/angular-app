@@ -9,5 +9,5 @@ import { Replicador } from './replicador/replicador';
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = 'Universidad Angular';
+  protected readonly title = 'Property Binding Angular';
 }

@@ -6,4 +6,11 @@ import { Component } from '@angular/core';
   templateUrl: './replicador.html',
   styleUrl: './replicador.css',
 })
-export class Replicador {}
+export class Replicador {
+  texto: string = '';
+
+  actualizarTexto(evento: InputEvent) {
+    const elementoInput = evento.target as HTMLInputElement;
+    this.texto = elementoInput.value;
+  }
+}
