@@ -1,13 +1,12 @@
 import { Component, signal } from '@angular/core';
-import { Padre } from "./padre/padre";
-import { Hijo } from "./hijo/hijo";
+import { MostrarMensaje } from "./mostrar-mensaje/mostrar-mensaje";
 
 @Component({
   selector: 'app-root',
-  imports: [Hijo],
+  imports: [MostrarMensaje],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('Universidad Angular');
+  protected readonly title = 'Universidad Angular';
 }

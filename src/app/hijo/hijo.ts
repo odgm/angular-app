@@ -13,4 +13,8 @@ export class Hijo {
   get mostrarTitulo(){
     return this.titulo;
   }
+
+  getTitulo(){
+    return this.titulo;
+  }
 }
