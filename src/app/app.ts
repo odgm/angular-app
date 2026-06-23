@@ -1,12 +1,10 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { NuevoComponente } from "./nuevo-componente/nuevo-componente";
-import { Interpolacion } from "./interpolacion/interpolacion";
 import { Padre } from "./padre/padre";
+import { Hijo } from "./hijo/hijo";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, NuevoComponente, Interpolacion, Padre],
+  imports: [Hijo],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
