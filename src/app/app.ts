@@ -10,5 +10,5 @@ import { AgregarTarea } from "./agregar-tarea/agregar-tarea";
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = 'Directiva @if en Angular';
+  protected readonly title = 'Local Reference Angular';
 }

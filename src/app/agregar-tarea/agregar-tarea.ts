@@ -6,4 +6,10 @@ import { Component } from '@angular/core';
   templateUrl: './agregar-tarea.html',
   styleUrl: './agregar-tarea.css',
 })
-export class AgregarTarea {}
+export class AgregarTarea {
+  tarea: string = '';
+
+  agregarTarea(nuevaTarea: string): void{
+    this.tarea = nuevaTarea;
+  }
+}
