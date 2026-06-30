@@ -6,4 +6,10 @@ import { Component } from '@angular/core';
   templateUrl: './componente-if.html',
   styleUrl: './componente-if.css',
 })
-export class ComponenteIf {}
+export class ComponenteIf {
+  isAutenticado: boolean = false;
+
+  alternarAutenticacion(): void{
+    this.isAutenticado = !this.isAutenticado;
+  }
+}
