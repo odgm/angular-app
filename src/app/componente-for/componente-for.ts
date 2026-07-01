@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AgregarTarea } from '../agregar-tarea/agregar-tarea';
 
 @Component({
   selector: 'app-componente-for',
@@ -6,4 +7,16 @@ import { Component } from '@angular/core';
   templateUrl: './componente-for.html',
   styleUrl: './componente-for.css',
 })
-export class ComponenteFor {}
+export class ComponenteFor {
+  tareas: string[] = [
+    'Aprender Angular',
+    'Desarrollar una App',
+    'Aprender TypeScript'
+  ];
+
+  agregarTarea(nuevaTarea: string): void{
+    if(nuevaTarea){
+      this.tareas.push(nuevaTarea);
+    }
+  }
+}
