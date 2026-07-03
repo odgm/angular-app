@@ -7,5 +7,6 @@ import { Component, Input } from '@angular/core';
   styleUrl: './hijo.css',
 })
 export class Hijo {
+  // "!" operador "non-null"
   @Input() mensaje!: string;
 }
