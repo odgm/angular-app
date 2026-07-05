@@ -8,5 +8,5 @@ import { Padre } from "./padre/padre";
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = 'Decorador @Input en Angular';
+  protected readonly title = 'Decorador @Output en Angular';
 }

@@ -8,5 +8,10 @@ import { Hijo } from "./hijo/hijo";
   styleUrl: './padre.css',
 })
 export class Padre {
-  mensajePadre: string = 'Mensaje del conponente Padre';
+  mensaje: string = '';
+
+  // Se eminitió una cadena, es lo que vamos a recivir del componente hijo
+  recibirNotificacion(mensaje: string){
+    this.mensaje = mensaje;
+  }
 }
