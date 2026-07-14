@@ -3,6 +3,7 @@ import { Padre } from "./padre/padre";
 
 @Component({
   selector: 'app-root',
+  standalone: true,
   imports: [Padre],
   templateUrl: './app.html',
   styleUrl: './app.css'
