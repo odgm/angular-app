@@ -1,18 +1,26 @@
-import { Component, ViewChild } from '@angular/core';
-import { HijoComponent } from './hijo/hijo';
+import { AfterViewInit, Component, ViewChild } from '@angular/core';
+import { Hijo } from './hijo/hijo';
 
 @Component({
   selector: 'app-padre',
-  imports: [HijoComponent],
+  imports: [Hijo],
   templateUrl: './padre.html',
   styleUrl: './padre.css',
 })
-export class Padre {
-  @ViewChild(HijoComponent) componenteHijo!: HijoComponent;
+export class Padre implements AfterViewInit {
+
+  @ViewChild(Hijo)
+  componenteHijo!: Hijo;
+
+  ngAfterViewInit() {
+    console.log('ViewChild:', this.componenteHijo);
+  }
 
   cambiarMensajeHijo() {
-    if (this.componenteHijo) {
-      this.componenteHijo.cambiarMensaje('mensaje actualizado desde el componente padre');
-    }
+    console.log('Botón pulsado');
+    console.log(this.componenteHijo);
+
+    this.componenteHijo.cambiarMensaje('Nuevo mensaje');
   }
+
 }
