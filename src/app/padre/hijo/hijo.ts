@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   templateUrl: './hijo.html',
   styleUrl: './hijo.css',
 })
-export class Hijo {
+export class HijoComponent {
   mensaje: string = 'Mensaje desde el componente hijo';
 
   cambiarMensaje(nuevoMensaje: string){

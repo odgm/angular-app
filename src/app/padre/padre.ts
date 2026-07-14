@@ -1,16 +1,18 @@
 import { Component, ViewChild } from '@angular/core';
-import { Hijo } from "./hijo/hijo";
+import { HijoComponent } from './hijo/hijo';
 
 @Component({
   selector: 'app-padre',
-  imports: [Hijo],
+  imports: [HijoComponent],
   templateUrl: './padre.html',
   styleUrl: './padre.css',
 })
 export class Padre {
-  @ViewChild(Hijo) componenteHijo!: Hijo;
+  @ViewChild(HijoComponent) componenteHijo!: HijoComponent;
 
   cambiarMensajeHijo() {
-    throw new Error('Method not implemented.');
+    if (this.componenteHijo) {
+      this.componenteHijo.cambiarMensaje('mensaje actualizado desde el componente padre');
+    }
   }
 }
